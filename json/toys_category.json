@@ -1,0 +1,220 @@
+[{
+  "_id": {
+    "$oid": "65f99172e129055086b23209"
+  },
+  "name": "Teddy Bear",
+  "info": "A soft plush teddy bear, perfect for cuddling.",
+  "category": "Plush Toys",
+  "img_url": "http://example.com/teddybear.jpg",
+  "price": 15.99,
+  "user_id": "user123"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b2320a"
+  },
+  "name": "Bunny Stuffed Animal",
+  "info": "Fluffy white bunny with long ears, great for kids of all ages.",
+  "category": "Plush Toys",
+  "img_url": "http://example.com/bunnystuffedanimal.jpg",
+  "price": 12.99,
+  "user_id": "user456"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b2320b"
+  },
+  "name": "Giant Panda Plush",
+  "info": "Giant plush panda, perfect for panda lovers.",
+  "category": "Plush Toys",
+  "img_url": "http://example.com/giantpandaplush.jpg",
+  "price": 25,
+  "user_id": "user789"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b2320c"
+  },
+  "name": "Lego Star Wars Set",
+  "info": "Star Wars themed Lego set with 500 pieces.",
+  "category": "Building Sets",
+  "img_url": "http://example.com/legostarwars.jpg",
+  "price": 59.99,
+  "user_id": "user101"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b2320d"
+  },
+  "name": "Magnetic Building Blocks",
+  "info": "100-piece set of colorful, magnetic building blocks for creative play.",
+  "category": "Building Sets",
+  "img_url": "http://example.com/magneticblocks.jpg",
+  "price": 35,
+  "user_id": "user202"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b2320e"
+  },
+  "name": "Castle Construction Kit",
+  "info": "Build your own medieval castle with this wooden construction kit.",
+  "category": "Building Sets",
+  "img_url": "http://example.com/castlekit.jpg",
+  "price": 45,
+  "user_id": "user303"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b2320f"
+  },
+  "name": "Remote Control Car",
+  "info": "High-speed remote control car with rechargeable battery.",
+  "category": "Electronic Toys",
+  "img_url": "http://example.com/rcar.jpg",
+  "price": 30,
+  "user_id": "user404"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b23210"
+  },
+  "name": "Drone with Camera",
+  "info": "Quadcopter drone with HD camera for aerial photography.",
+  "category": "Electronic Toys",
+  "img_url": "http://example.com/drone.jpg",
+  "price": 100,
+  "user_id": "user505"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b23211"
+  },
+  "name": "Electronic Robot Dog",
+  "info": "Interactive robot dog that can walk, bark, and perform tricks.",
+  "category": "Electronic Toys",
+  "img_url": "http://example.com/robotdog.jpg",
+  "price": 60,
+  "user_id": "user606"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b23212"
+  },
+  "name": "Hand Puppet Set",
+  "info": "Set of 4 colorful animal hand puppets for storytelling.",
+  "category": "Plush Toys",
+  "img_url": "http://example.com/handpuppets.jpg",
+  "price": 20,
+  "user_id": "user707"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b23213"
+  },
+  "name": "Dinosaur Plush Toy",
+  "info": "Soft and cuddly dinosaur plush toy, great for prehistoric enthusiasts.",
+  "category": "Plush Toys",
+  "img_url": "http://example.com/dinoplush.jpg",
+  "price": 18,
+  "user_id": "user808"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b23214"
+  },
+  "name": "Architectural Building Set",
+  "info": "Create famous buildings with this detailed architectural set.",
+  "category": "Building Sets",
+  "img_url": "http://example.com/architectset.jpg",
+  "price": 70,
+  "user_id": "user909"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b23215"
+  },
+  "name": "Toy Train Set",
+  "info": "Classic toy train set with tracks and locomotive.",
+  "category": "Electronic Toys",
+  "img_url": "http://example.com/trainset.jpg",
+  "price": 50,
+  "user_id": "user010"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b23216"
+  },
+  "name": "Interactive Globe",
+  "info": "Educational electronic globe with interactive quizzes and facts.",
+  "category": "Electronic Toys",
+  "img_url": "http://example.com/interactiveglobe.jpg",
+  "price": 80,
+  "user_id": "user111"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b23217"
+  },
+  "name": "Voice Changing Microphone",
+  "info": "Have fun with this microphone that can change your voice in several hilarious ways.",
+  "category": "Electronic Toys",
+  "img_url": "http://example.com/voicechanger.jpg",
+  "price": 25,
+  "user_id": "user212"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b23218"
+  },
+  "name": "Soft Elephant Toy",
+  "info": "Super soft and cuddly elephant toy, perfect for bedtime.",
+  "category": "Plush Toys",
+  "img_url": "http://example.com/elephanttoy.jpg",
+  "price": 22,
+  "user_id": "user313"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b23219"
+  },
+  "name": "Wooden Train Tracks",
+  "info": "Expandable wooden train tracks compatible with all major brands.",
+  "category": "Building Sets",
+  "img_url": "http://example.com/woodentracks.jpg",
+  "price": 30,
+  "user_id": "user414"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b2321a"
+  },
+  "name": "Interactive Learning Tablet",
+  "info": "Kid-friendly tablet with educational games and apps.",
+  "category": "Electronic Toys",
+  "img_url": "http://example.com/learningtablet.jpg",
+  "price": 75,
+  "user_id": "user515"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b2321b"
+  },
+  "name": "Glow-in-the-Dark Stars",
+  "info": "Decorate your room with these glow-in-the-dark stars for a night sky effect.",
+  "category": "Building Sets",
+  "img_url": "http://example.com/glowstars.jpg",
+  "price": 10,
+  "user_id": "user616"
+},
+{
+  "_id": {
+    "$oid": "65f99172e129055086b2321c"
+  },
+  "name": "Electric Keyboard",
+  "info": "Beginner-friendly electronic keyboard with multiple instrument sounds.",
+  "category": "Electronic Toys",
+  "img_url": "http://example.com/keyboard.jpg",
+  "price": 90,
+  "user_id": "user717"
+}]

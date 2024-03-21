@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys API Documentation</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <button id="sidebarToggle" aria-label="Toggle Sidebar">Toggle Sidebar</button>
+    <nav class="sidebar" id="sidebar">
+        <a href="#generalRoutes">General Routes</a>
+        <a href="#userRoutes">User Routes</a>
+    </nav>
+
+    <main class="content">
+        <h1 class="text-center">Toys API Documentation</h1>
+
+        <section id="generalRoutes" class="section">
+            <h2>Toys Routes</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>HTTP Method</th>
+                            <th>Route</th>
+                            <th>Description</th>
+                            <th>Parameters / Request Body</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GET</td>
+                            <td>/toys</td>
+                            <td>Returns a list of toys with pagination, sorting, and reverse options.</td>
+                            <td>
+                                <ul>
+                                    <li>limit (Query Parameter, optional): Number of toys to return.</li>
+                                    <li>skip (Query Parameter, optional): Number of toys to skip.</li>
+                                    <li>sort (Query Parameter, optional): Attribute to sort by.</li>
+                                    <li>reverse (Query Parameter, optional): Set to "yes" for descending order.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GET</td>
+                            <td>/toys/search</td>
+                            <td>Searches for toys by name or info.</td>
+                            <td>
+                                <ul>
+                                    <li>s (Query Parameter): Search term.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GET</td>
+                            <td>/toys/category/:catName</td>
+                            <td>Retrieves toys from a specific category with pagination and sorting options.</td>
+                            <td>
+                                <ul>
+                                    <li>catName (Path Parameter): Name of the category.</li>
+                                    <li>limit, skip, sort, reverse (Query Parameters, optional): See above.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GET</td>
+                            <td>/toys/single/:id</td>
+                            <td>Retrieves a single toy by its ID.</td>
+                            <td>
+                                <ul>
+                                    <li>id (Path Parameter): The ID of the toy.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GET</td>
+                            <td>/toys/price</td>
+                            <td>Retrieves toys within a specific price range.</td>
+                            <td>
+                                <ul>
+                                    <li>min, max (Query Parameters, optional): Minimum and maximum price.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>GET</td>
+                            <td>/toys/count</td>
+                            <td>Returns the count of all toys, with pagination support.</td>
+                            <td>
+                                <ul>
+                                    <li>limit (Query Parameter, optional): Number of toys per page.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>POST</td>
+                            <td>/toys</td>
+                            <td>Adds a new toy to the database. Requires authentication.</td>
+                            <td>
+                                <ul>
+                                    <li>Header: Authorization (e.g., Bearer {token})</li>
+                                    <li>Request Body: Toy data in JSON format.</li>
+                                </ul>
+                                <pre>{
+            "name": "Toy Name",
+            "info": "Toy Info",
+            "category": "Toy Category",
+            "img_url": "Toy Image URL",
+            "price": Toy Price
+        }</pre>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>PUT</td>
+                            <td>/toys/:id</td>
+                            <td>Updates an existing toy by its ID. Requires authentication.</td>
+                            <td>
+                                <ul>
+                                    <li>id (Path Parameter): ID of the toy to update.</li>
+                                    <li>Header: Authorization (e.g., Bearer {token})</li>
+                                    <li>Request Body: Updated toy data in JSON format.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>DELETE</td>
+                            <td>/toys/:id</td>
+                            <td>Deletes a specific toy by its ID. Requires authentication.</td>
+                            <td>
+                                <ul>
+                                    <li>id (Path Parameter): ID of the toy to delete.</li>
+                                    <li>Header: Authorization (e.g., Bearer {token})</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="userRoutes" class="section">
+            <h2>Users API</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>HTTP Method</th>
+                            <th>Route</th>
+                            <th>Description</th>
+                            <th>Parameters / Request Body</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GET</td>
+                            <td>/users</td>
+                            <td>Test endpoint to verify the users route is working.</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>GET</td>
+                            <td>/users/userInfo</td>
+                            <td>Get the information for the authenticated user (requires authentication)</td>
+                            <td>N/A</td>
+                        </tr>
+                        <tr>
+                            <td>POST</td>
+                            <td>/users</td>
+                            <td>Registers a new user, encrypts the password before saving it.</td>
+                            <td>
+                                <ul>
+                                    <li>Request Body (JSON):
+                                        <pre>
+{
+    "name": "Your Name",
+    "email": "your_email@example.com",
+    "password": "your_secure_password"
+}                           </pre>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>POST</td>
+                            <td>/users/login</td>
+                            <td>Authenticates a user and returns a token if successful.</td>
+                            <td>
+                                <ul>
+                                    <li>Request Body (JSON):
+                                        <pre>
+{
+    "email": "your_email@example.com",
+    "password": "your_secure_password"
+}</pre>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById('sidebarToggle').addEventListener('click', function () {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+            console.log('Toggle button clicked, sidebar active class toggled');
+        });
+
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (currentScrollPos > 100) {
+                document.getElementById("sidebar").style.opacity = "0";
+                document.getElementById("sidebar").style.visibility = "hidden";
+            } else {
+                document.getElementById("sidebar").style.opacity = "1";
+                document.getElementById("sidebar").style.visibility = "visible";
+            }
+        };
+    </script>
+
+</body>
+
+</html>
